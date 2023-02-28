@@ -14,7 +14,7 @@ class ExpenseSeeder extends Seeder
     public function run(): void
     {
         Expense::create([
-            'amount' => 20,00,
+            'amount' => 20.00,
             'description'=> 'Pieczywko',
             'user_id'=>1,
             'category_id' => 1
