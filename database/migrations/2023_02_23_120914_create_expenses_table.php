@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('expenses', function (Blueprint $table) {
             $table->id();
-            $table->integer('amount');
+            $table->text('description')->nullable();
+            $table->double('amount', 19,2);
             $table->bigInteger('user_id');
             $table->bigInteger('category_id');
             $table->timestamps();
